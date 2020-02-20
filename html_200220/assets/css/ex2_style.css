@@ -1,0 +1,46 @@
+/* Reset CSS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header {
+    width: 100%;
+    height: 200px;
+    background-color: coral;
+    text-align: center;
+    /* box-sizing: content-box;
+    image-rendering: unset; */
+    
+}
+img {
+    height: 200px;
+}
+nav {
+    width: 100%;
+    height: 100px;
+    background-color: crimson;
+    
+}
+main {
+    width: 100%;
+    height: 700px;
+    background-color: greenyellow;
+}
+footer {
+    width: 100%;
+    height: 200px;
+    background-color: lightblue;
+}
+.item{
+    color: white;
+    font-size: 1.3em;
+}
+#principal {
+    width: 80%;
+    margin: 0 auto;
+}
+#menu {
+    /* text-decoration: blue; */
+    list-style: none;
+}
