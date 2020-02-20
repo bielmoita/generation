@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+} 
+header {
+    background-color: gray;
+    width: 1200px;
+    height: 185px;
+}
+nav {
+    background-color: whitesmoke;
+    width: 1200px;
+    height: 70px;
+}
+aside {
+    background-color: salmon;
+    width: 280px;
+    height: 1000px;
+    float: left;
+}
+main {
+    background-color: orangered;
+    width: 1200px;
+    height: 1000px;
+    
+}
+
+
+
+article {
+    background-color: orchid;
+    width: 920px;
+    height: 1000px;
+    float: left;
+}
+
+#sec1 {
+    background-color: mintcream;
+    width: 460px;
+    height: 500px;
+    float: left;
+}
+#sec2 {
+    background-color: yellowgreen;
+    width: 460px;
+    height: 500px;
+    float: left;
+}
+#sec3 {
+    background-color: red;
+    width:460px;
+    height: 500px;
+    float: left;
+}
+#sec4 {
+    background-color: pink;
+    width: 460px;
+    height: 500px;
+    float: left;
+}
+
+/* section {
+    background-color: mediumblue;
+    width: 460px;
+    height: 500px;
+    float: left;
+} */
+
+footer {
+    background-color: purple;
+    width: 1200px;
+    height: 200px;
+}
+#caixa {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+
+
+

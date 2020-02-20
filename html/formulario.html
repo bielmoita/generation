@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generation - Formulario</title>
+    <link rel="stylesheet" href="assets/css/formulario.css">
+</head>
+
+<body>
+    <h1>Formulário</h1>
+    <br><br>
+    <form action="" method="POST" id="caixa">
+      <label for="">
+            Nome:
+
+        </label>
+        <br>
+        <input type="text" name="nome" maxlength="20" size="40" placeholder="Digite o seu nome" required>
+        <br>
+        <label for="">Idade:</label> <br>
+        <input type="number" name="idade" min="18" max="29">
+        <br><br>
+        <label for="">Nascimento:</label> <br>
+        <input type="date" name="nascimento">
+        <br><br>
+        <label for="">Observação:</label> <br>
+        <textarea name="observacao" id="" cols="20" rows="4"></textarea>
+        <br><br>
+        <label for="">Selecione seu Estado</label> <br>
+        <select name="estados" id="">
+            <option value="SP">São Paulo</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="MG">Minas Gerais</option>
+        </select>
+        <br><br>
+        <label for="">Senha:</label> <br>
+        <input type="password" name="senha" required>
+        <br><br>
+        <!-- <label for="">Sexo: </label> -->
+        <input type="radio" name="Sexo" id="f" value="F" >
+        <label for="f">Feminino</label> <br>
+        <input type="radio" name="Sexo" id="m" value="M" >
+        <label for="m">Masculino</label>
+        <br><br>
+        <input type="checkbox" name="" id="">
+        <label for="">Almoço</label>
+        <input type="checkbox" name="" id="">
+        <label for="">Vale transporte</label>
+        <br><br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar campos">
+
+
+
+
+
+    </form>
+
+</body>
+
+</html>

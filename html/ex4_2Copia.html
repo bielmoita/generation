@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generation - EX4</title>
+    
+    <!-- colocar um icone na aba -->
+    <link rel="icon" href="assets/img/ART_Corinthians.jfif" />
+    <style>
+      /* CSS Interno */
+      /* organizar os seletores dos mais amplos para os mais especificos. */
+      * { box-sizing: border-box;
+      /* Resetar margin e padding */
+      margin:0; padding:0;}
+      header {
+        background-color: darkred;
+        width: 600px;
+        height: 100px;
+      }
+
+      nav {
+        background-color: dodgerblue;
+        width: 100%;
+        height: 80px;
+      }
+      main {
+          background-color: darkgray;
+          width: 600px;
+          height: 420px;
+      }
+      article {
+          background-color: deeppink;
+          width: 400px;
+          height: 420px;
+          float: left;
+          
+      }
+      section {
+          background-color: gold;
+            width: 350px;
+            height: 200px;
+            margin-left: 25px;
+      }
+      aside {
+          background-color: indigo;
+          width: 200px;
+          height: 420px;
+          float: left;
+      }
+      footer {
+          background-color: lightcoral;
+          width: 600px;
+          height: 100px;
+          
+      }
+      #box {
+          width: 600px;
+          height: 700px;
+          margin: 50px auto;
+         
+      }
+      
+
+    </style>
+  </head>
+  <body>
+    <!-- Estruturas semanticas -->
+    <div id = "box">
+      <header>Header</header>
+      <nav>Navigation</nav>
+      <main>
+        <article>
+          <section style="margin-top: 10px;">Section dentro do article</section>
+          <section>Section dentro do article</section>
+        </article>
+        <aside>Aside</aside>
+      </main>
+      <footer>Footer</footer>
+    </div>
+  </body>
+</html>
