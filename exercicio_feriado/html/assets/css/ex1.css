@@ -1,0 +1,42 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+body {
+    font-family: 'Montserrat' ;
+}
+
+.titulo{
+    color: rgb(179, 53, 218);
+}
+.tituloTopo {
+    text-align: center;
+}
+.img-turtle{
+    display: flex;
+}
+
+
+  
+  /* Media queries */
+  @media (max-width: 601px) {
+    body {
+        background-color: #4169E1;
+    }
+    .tituloTopo {
+        color: white;
+        text-align: center;
+    }
+    
+      .img-turtle{
+          display: none;
+      }
+      
+    .conteudo-color{
+        background-color: rgb(179, 53, 218);
+    }
+
+    .titulo{
+        color: white;
+    }
+} 
