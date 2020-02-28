@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX5 - Ordenando por maiuscula</title>
+</head>
+<body>
+    <div>
+        <form action="" method="GET">Ordenando por maiuscula</form>
+        <div>
+          <label for="InserirValor">Insira a palavra: </label>
+          <input type="text" id="valor" />
+        </div>
+        <div class="button">
+          <button onclick="colocarOrdem()">Em ordem!</button>
+        </div>
+      </div>
+      <script>
+        // var n = document.getElementById("valor").value;
+        function colocarOrdem(onclick) {
+          var n = document.getElementById("valor").value;
+          var resultado = ""
+          var vetor = n.split(" "); //Transformando string em vetor
+          alert (vetor)
+
+          for (var i=0; i<vetor.length;i++) {
+              //replace (Valor atual, novo valor)
+              //valor atual = vetor[i].slice(0,1) --> e
+              //novo valor = vetor[i].slice(0,1).toUpperCase() --> E
+
+              //Função slice - retira a cadeia de caracteres de acordo com a posição mencionada nos parenteses.
+              //slice(a partir de onde, até o ponto de parada)
+
+              vetor[i] = vetor[i].replace(vetor[i].slice(0,1),vetor[i].slice(0,1).toUpperCase())
+              resultado = resultado + " "+vetor[i]
+          }
+          document.write(resultado)
+          
+        }
+  
+      </script>
+    
+</body>
+</html>

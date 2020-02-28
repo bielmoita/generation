@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EX1 - Substring</title>
+  </head>
+
+  <body>
+    <div>
+      <form action="" method="GET">Inversão de Valores com Substring</form>
+      <div>
+        <label for="InserirValor">Insira o Valor até 4 digitos: </label>
+        <input type="text" id="valor" required maxlength="4" />
+      </div>
+      <div class="button">
+        <button onclick="inverter()">INVERTER!</button>
+      </div>
+    </div>
+    <script>
+    //   var n = document.getElementById("valor");
+      function inverter(onclick) {
+        var n = document.getElementById("valor").value;
+        var resposta =
+          n.substring(3, 4) +
+          n.substring(2, 3) +
+          n.substring(2, 1) +
+          n.substring(0, 1);
+
+        document.write(
+          "O numero inserido foi: " +
+            n +
+            "<br>" +
+            "O numero reverso é: " +
+            resposta
+        );
+      }
+
+    </script>
+  </body>
+</html>
