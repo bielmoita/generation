@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EX6 - Maior Palavra</title>
+  </head>
+  <body>
+    <div>
+      <h3>
+        <p>
+          Write a JavaScript function that accepts a string as a parameter and
+          find the longest word within the string. 
+          <br>
+          Go to the editor Example string : <br>
+          Web Development Tutorial; <br> 
+          Expected Output : Development;
+        </p>
+      </h3>
+      <form action="" method="GET">A maior palavra</form>
+      <div>
+        <label for="InserirValor">Insira a frase: </label>
+        <input type="text" id="valor" autofocus />
+      </div>
+      <div class="button">
+        <button onclick="colocarOrdem()">A maior palavra é?</button>
+      </div>
+    </div>
+    <script>
+      // var n = document.getElementById("valor").value;
+      function colocarOrdem(onclick) {
+        var n = document.getElementById("valor").value;
+        
+        var vetor = n.split(" "); //Transformando string em vetor
+        maior = vetor[0]
+        alert(vetor);
+
+        for (var i = 1; i < vetor.length; i++) {
+          
+
+          if (maior.length < vetor[i].length)
+          {
+              maior = vetor[i]
+
+          }
+          
+          
+        }
+        document.write("A maior palavra é: " + maior + ". Com "+ maior.length + " caracteres.");
+      }
+    </script>
+  </body>
+</html>
