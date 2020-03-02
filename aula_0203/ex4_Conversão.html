@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EX4 - Convertendo Temperatura</title>
+  </head>
+  <body>
+
+    <div>
+        <h3>
+          
+        </h3>
+        <form action="" method="GET">Conversão de Temperatura</form>
+        <div>
+          <label for="InserirValor">Insira a Tenperatura em Celsius: </label>
+          <input type="text" id="valor" autofocus />
+          <br>
+          
+        </div>
+        <div class="button">
+          <button onclick="converterTemp()">A temperatura em Fahrenheit </button>
+        </div>
+      </div>
+
+
+    <script>
+        var a = document.getElementById("valor").value;
+        
+        var valorA = parseInt(a);
+       console.log(valorA)
+        
+        
+
+      function converterTemp(valorA) { 
+          
+          var conversao = (valorA*(9/5))+32;
+            var convertido = parseInt(conversao);
+        
+        alert ("A temperatura em Fahrenheit é: "+ convertido)
+      }
+      
+
+      
+        
+       
+
+      
+
+
+    </script>
+  </body>
+</html>

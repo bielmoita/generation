@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX3 - Funções chamando Funções</title>
+</head>
+<body>
+
+    <Script>
+        function funcao1()
+        {
+            funcao2()
+            console.log("Executando a função 1")
+        }
+        function funcao2()
+        {
+            funcao3()
+            console.log("Executando a função 2")
+            
+        }
+        function funcao3()
+        {
+            console.log("Executando Função 3")
+        }
+
+        //Invocando função 1 apenas
+
+        funcao1()
+    </Script>
+    
+</body>
+</html>
