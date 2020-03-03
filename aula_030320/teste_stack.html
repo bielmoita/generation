@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    
+
+
+    <table id="parceiro" class="table table-bordered table-striped">
+        <thead>
+        <tr>
+
+            <th># ID</th>
+            <th><i class="fa fa-user-o"></i> Nome Usuário</th>
+            <th><i class="fa fa-group"></i> Perfil</th>
+            <th><i class="fa fa-sitemap"></i> Vínculo</th>
+            <th><i class="fa fa-envelope-open"></i> E-mail </th>
+            <th><i class="fa fa-phone"></i> Telefone</th>
+            <th><i class="fa fa-gears"></i> Ações</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="parceiro">
+            <td>001</td>
+            <td>Marcus Vinicius de Carvalho Botelho</td>
+            <td>Administrador</td>
+            <td></td>
+            <td>atendimento@bardomarcus.com.br</td>
+            <td>(85) 3275-2244</td>
+            <td>
+                <button class="btn btn-info"><i class="fa fa-pencil"></i> Editar</button>
+                <button class="btn btn-danger excluir"><i class="fa fa-trash-o"></i> Excluir</button>
+            </td>
+        </tr>
+        <tr class="parceiro">
+            <td>002</td>
+            <td>João Carlos Crispin</td>
+            <td>Parceiro</td>
+            <td>Café do João</td>
+            <td>atendimento@cafejoao.com.br</td>
+            <td>(85) 3271-5533</td>
+            <td>
+                <button class="btn btn-info"><i class="fa fa-pencil"></i> Editar</button>
+                <button class="btn btn-danger excluir"><i class="fa fa-trash-o"></i> Excluir</button>
+            </td>
+        </tr>
+        <tr class="parceiro">
+            <td>003</td>
+            <td>João Carlos Crispin</td>
+            <td>Parceiro</td>
+            <td></td>
+            <td>atendimento@cafejoao.com.br</td>
+            <td>(85) 3271-5533</td>
+            <td>
+                <button class="btn btn-info"><i class="fa fa-pencil"></i> Editar</button>
+                <button class="btn btn-danger excluir"><i class="fa fa-trash-o"></i> Excluir</button>
+            </td>
+        </tr></table>
+
+
+
+        <script>
+            $( "button.excluir" ).click(function() {
+                $(this).parent().parent().remove();
+    }
+    );
+
+        </script>
+</body>
+</html>

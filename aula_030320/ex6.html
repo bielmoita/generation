@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX6 - Add itens em Lista</title>
+    <style>
+        li { color: blueviolet;}
+    </style>
+</head>
+<body>
+    <ul id="grupo">
+        <li class="item">Item 1</li>
+        <li class="item">Item 2</li>
+    </ul>
+    <button id="adicionar" onclick="adicionar()" title="Clique para adicionar">ADICIONAR</button>
+    <button id="remover" onclick="remover()">REMOVER</button>
+    
+
+
+
+    <Script>
+        
+        function adicionar()
+        {
+            var add = prompt("Adicione seu item: ")
+            var ul = document.getElementById("grupo");
+            var li = document.createElement("li"); //Criação do novo elemento
+
+            li.className = "item";
+
+            li.appendChild(document.createTextNode(add));
+            
+            ul.appendChild(li);
+        }
+
+        function remover()
+        {
+            var ul = document.getElementById("grupo");
+            ul.innerHTML = "";
+            alert ("Lista removida com sucesso!")
+            ul.length = 0;
+        }
+    </Script>
+</body>
+</html>
