@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora_Quando_Quiser</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  </head>
+  <body>
+    <main class="container">
+      <article>
+        <h2>
+          <span class="glyphicon glyphicon-calendar"></span> Calculadora de
+          idade no ano que a pessoa quiser
+        </h2>
+        <p>
+          Faça um programa que receba o ano de nascimento de uma pessoa, calcule
+          e mostre:<br />
+          a. A idade dessa pessoa;<br />
+          b. Quantos anos ela terá no ano que escolheu.
+        </p>
+        <div class="panel-body">
+          <p class="form-inline">
+            <label for="nome">Digite seu nome:</label>
+            <input class="form-control" type="text" id="nome" autofocus />
+          </p>
+          <p class="form-inline">
+            <label for="ano-nasc">Em que ano você nasceu?</label>
+            <input class="form-control" type="number" id="ano-nasc" />
+          </p>
+          <p class="form-inline">
+            <label for="ano-atual">Em que ano estamos, mesmo?</label>
+            <input class="form-control" type="number" id="ano-atual" />
+          </p>
+          <p class="form-inline">
+            <label for="idade-em">Em qual ano deseja saber que idade tinha ou terá?</label>
+            <input class="form-control" type="number" id="idade-em" />
+          </p>
+          <p>
+            <button id="calcular" class="btn btn-primary">CALCULAR</button>
+          </p>
+          <p>
+            Resposta: <span id="seu-nome" class="resposta">&nbsp;</span
+            ><span id="resultado-paragrafo" class="resposta">&nbsp;</span>
+          </p>
+          <input
+            class="form-control"
+            type="text"
+            id="resultado-input"
+            value="Resposta aqui..."
+            disabled
+          />
+        </div>
+      </article>
+    </main>
+
+
+
+    <script src="../Exercicios/js/calc_idade2050.js"></script>
+    
+  </body>
+</html>
