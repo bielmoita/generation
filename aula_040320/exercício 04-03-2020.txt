@@ -1,0 +1,16 @@
+Criar um objeto chamado: Carro com os seguintes atributos:
+marca
+ano de fabricação
+velocidade máxima
+velocidade atual (inicializar com 0)
+
+
+Criar o método acelerar()
+Este método irá verificar se a velocidade atual é menor que a velocidade máxima. Cada vez que ele for executado a velocidade atual será acrescida de 1.
+
+
+Criar o método desacelerar()
+Cada vez que ele for executado a velocidade atual será decrescida de 1. Não deixar a velocidade atual negativa.
+
+Criar instâncias e testar os métodos.
+

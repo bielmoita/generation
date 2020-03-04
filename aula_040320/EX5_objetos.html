@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicio5 - Objeto Carro</title>
+  </head>
+
+  <h4>
+    <p>
+      Criar um objeto chamado: Carro com os seguintes atributos:
+      <br />marca <br />ano de fabricação <br />velocidade máxima
+      <br />velocidade atual (inicializar com 0)
+      <br />
+      <br />Criar o método acelerar() <br />Este método irá verificar se a
+      velocidade atual é menor que a velocidade máxima. Cada vez que ele for
+      executado a velocidade atual será acrescida de 1.
+      <br />
+      <br />Criar o método desacelerar() <br />Cada vez que ele for executado a
+      velocidade atual será decrescida de 1. Não deixar a velocidade atual
+      negativa.
+      <br />
+      <br />Criar instâncias e testar os métodos.
+    </p>
+  </h4>
+  <body>
+    <br /><br />
+    <form id="form" action="">
+      Marca:
+      <input type="text" id="marca" required autofocus /><br />
+
+      Ano de Fabricação:
+      <input type="number" maxlength="4" id="anoFabricacao" /><br />
+
+      Velovidade Maxima:
+      <input type="number" id="velocidadeMax" maxlength="3" /><br />
+
+      Velocidade Atual:
+      <input type="number" id="velocidadeAtual" maxlength="3" /><br />
+
+      <input type="button" value="CLIQUE AQUI" id="botao" />
+    </form>
+
+    <script>
+      document.getElementById("botao").addEventListener("click", function() {
+        marca = document.getElementById("marca").value;
+        ano = document.getElementById("anoFabricacao").value;
+        vMax = document.getElementById("velocidadeMax").value;
+        vAtual = document.getElementById("velocidadeAtual").value;
+
+        alert(marca + ano + vMax + vAtual);
+      });
+
+      function MeuCarro(
+        _marca,
+        _anoFabricacao,
+        _velocidadeMax,
+        _velocidadeAtual
+      ) {
+        //Atributos
+        this.marca = _marca;
+        this.anoFabricacao = _anoFabricacao;
+        this.velocidadeMax = _velocidadeMax || 5;
+        this.velocidadeAtual = _velocidadeAtual || 0;
+
+        //fim dos atributos -------
+      }
+
+      //Inicio do método Acelerar
+      MeuCarro.prototype.acelerar = function() {
+        // this.velocidadeMax = 5
+        // this.velocidadeAtual = 4
+        if (
+          this.velocidadeAtual == this.velocidadeMax ||
+          this.velocidadeAtual > this.velocidadeMax
+        ) {
+          alert("A velocidade no Maximo ou errada!");
+        } else if (this.velocidadeAtual < this.velocidadeMax) {
+          this.velocidadeAtual = this.velocidadeAtual + 1;
+          alert("A Velocidade atual é: " + this.velocidadeAtual);
+        }
+      };
+      //Fim do metodo Acelerar
+
+      //Inicio do método Desacelerar
+      MeuCarro.prototype.desacelerar = function() {
+        if (this.velocidadeAtual == 0 || this.velocidadeAtual < 0) {
+          this.velocidadeAtual = 0;
+          alert("O carro esta parado");
+        } else {
+          this.velocidadeAtual = this.velocidadeAtual - 1;
+          alert("A Velocidade atual é: " + this.velocidadeAtual);
+        }
+      };
+      //Fim do método Desacelerar
+    </script>
+  </body>
+</html>
