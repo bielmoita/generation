@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EX3</title>
+  </head>
+  <body>
+      <input type="text" id="nome">
+      <input type="button" value="CLIQUE AQUI" id="botao">
+
+
+    <script>
+        try
+        {
+        //function() - sem nome = Função anonima
+        var nome //variavel global
+        document.getElementById("botao").addEventListener('click', function() {
+            nome = document.getElementById("nome").value
+            alert (nome)
+        })
+
+        //comando que marca breakpoint no console
+        //para encontrar erros, porem podemos usar o try e catch
+        debugger
+
+        document.getElementById('botao').addEventListener("mouseover", function(){
+            document.getElementById('nome').style.color="red"
+        })
+        document.getElementById('botao').addEventListener("mouseout", function(){
+            document.getElementById('nome').style.color="black"
+        })
+    }
+        catch(erro)
+        {
+            alert(erro)
+        }
+
+    </script>
+  </body>
+</html>
