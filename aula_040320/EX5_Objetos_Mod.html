@@ -36,9 +36,11 @@
       <input type="number" id="velocidadeMax" maxlength="3" /><br />
 
       Velocidade Atual:
-      <input type="number" id="velocidadeAtual" maxlength="3" /><br />
-
-      <input type="button" value="CLIQUE AQUI" id="botao" />
+      <input type="number" id="velocidadeAtual" maxlength="3" />
+      <input type="button" value="Exibir" id="botao" />
+      <br />
+      <input type="button" value="Acelerar" id="btnAcelerar" />
+      <input type="button" value="DESACELERAR" id="btnDesacelerar" />
     </form>
 
     <script>
@@ -48,7 +50,7 @@
         vMax = document.getElementById("velocidadeMax").value;
         vAtual = document.getElementById("velocidadeAtual").value;
 
-        alert(marca + ano + vMax + vAtual);
+        alert("A Marca é: "+marca+"\nO ano é: " + ano+"\nA Velocidade Maxima: " + vMax +"\nA Velocidade atual é: "+ vAtual);
       });
 
       function MeuCarro(
@@ -98,11 +100,19 @@
       carro2 = new MeuCarro("Toyota", 2020, 1, 0)
 
 
-      carro1.desacelerar();
-      carro2.desacelerar();
+acelerarCarro = new MeuCarro(document.getElementById("botao").addEventListener("click", function() {
+        marca = document.getElementById("marca").value;
+        ano = document.getElementById("anoFabricacao").value;
+        vMax = document.getElementById("velocidadeMax").value;
+        vAtual = document.getElementById("velocidadeAtual").value;
 
-      carro1.acelerar();
-      carro2.acelerar();
+        alert("A Marca é: "+marca+"\nO ano é: " + ano+"\nA Velocidade Maxima: " + vMax +"\nA Velocidade atual é: "+ vAtual);
+      }))
+    //   carro1.desacelerar();
+    //   carro2.desacelerar();
+
+    //   carro1.acelerar();
+    //   carro2.acelerar();
 
       
 
