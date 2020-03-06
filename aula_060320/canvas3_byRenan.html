@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo Canvas - 3</title>
+    <style>
+        #quadro{border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <canvas width="200" height="200" id="quadro">
+
+        <img src="../aula_060320/assets/img/cat_image_canvas.jfif" style="width: 100%;" alt="Gato Olhando">
+
+    </canvas>
+
+    <script>
+        var canvas=document.getElementById("quadro")
+        if(canvas.getContext){
+            var ctx=canvas.getContext("2d")
+            ctx.beginPath()
+            // ctx.fillStyle="rgba(0,149,197.0.8)"
+            //Desenhando um circulo
+            //O Canvas não trabalha com angulos em graus,
+            //somente em radianos. Para Transformar: 
+            //Math.PI/180*angulo que voce quer utilizar
+            ctx.arc(100,100,40,Math.PI/180*45,Math.PI/180*315)
+           
+            
+            ctx.lineTo(100,100)
+            ctx.lineTo(129,129)
+            ctx.fillStyle="rgb(255,255,0)"
+            ctx.fill() //Preenchimento da forma PacMan
+            
+            ctx.stroke()
+        }
+        else {
+            alert("Navegador não suporta o Canvas!!!")
+        }
+    </script>
+</body>
+</html>

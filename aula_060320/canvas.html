@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aprendendo Canvas</title>
+    <style>
+        #quadro {
+            border: 1px solid black;
+        }
+    </style>
+  </head>
+  <body>
+    <canvas width="300" height="200" id="quadro"> </canvas>
+
+    <script type="text/javascript">
+      //Desenhando uma linha no Canvas
+      var canvas = document.getElementById("quadro");
+
+      //Verificando se o navegador tem suporte
+      if (canvas.getContext) {
+        //canvas.getContext==true
+        var contexto = canvas.getContext("2d");
+        contexto.beginPath(); //Avisando que irei desenhar
+        //primeira Linha
+        contexto.moveTo(50, 30);
+        contexto.lineTo(150, 100);
+        contexto.strokeStyle="rgb(0,148,197)"
+        contexto.stroke();
+        //segunda Linha
+        contexto.beginPath()
+        contexto.moveTo(150,100)
+        contexto.lineTo(250, 100);
+        contexto.strokeStyle="red"
+        contexto.stroke();
+      } else {
+        alert("Elemento não é suportado pelo Navegador");
+      }
+    </script>
+  </body>
+</html>

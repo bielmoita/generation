@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo Canvas 2</title>
+    <style>
+        canvas{
+            border:1px solid black;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+
+    <canvas width="300" height="300" id="quadro"></canvas>
+
+
+
+    <Script>
+        var quadro=document.getElementById("quadro")
+        //Verificadno se há suporte do Navegador
+        if(quadro.getContext){
+            //ctx = abreviação de Contexto
+            var ctx= quadro.getContext("2d")
+            ctx.fillStyle="rgba(0,149,197,0.3)"
+            ctx.fillRect(30,30,200,100)
+
+        }
+        else {
+            alert("Não funciona nesse Navegador!")
+        }
+
+
+    </Script>
+    
+</body>
+</html>
