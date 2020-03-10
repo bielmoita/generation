@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicio 5 - Arrow Function</title>
+  </head>
+  <body>
+    <form action="">
+      <div>
+        <label for="">Informe um numero inteiro:</label>
+        <input id="num1" type="number" required autofocus />
+        <br /><br />
+        <label for="">Informe um numero inteiro:</label>
+        <input id="num2" type="number" required />
+        <br /><br />
+        <button id="soma" type="button">SOMA</button>
+      </div>
+    </form>
+
+    <script>
+      var btnSoma = document
+        .getElementById("soma")
+        .addEventListener("click", somar);
+      function somar() {
+        var num1 = parseInt(document.getElementById("num1").value);
+        var num2 = parseInt(document.getElementById("num2").value);
+        var soma = num1 + num2;
+        alert(soma);
+      }
+    </script>
+  </body>
+</html>
